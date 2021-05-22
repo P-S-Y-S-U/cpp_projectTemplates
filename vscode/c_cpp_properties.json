@@ -2,7 +2,6 @@
     "env": {
         "ndk_home" : "",
         "myDefaultIncludePath": [
-            "${workspaceFolder}/**",
             "${workspaceFolder}/Include",
             "${workspaceFolder}/include"
         ],
