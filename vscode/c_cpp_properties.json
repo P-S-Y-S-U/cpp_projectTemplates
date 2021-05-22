@@ -1,0 +1,62 @@
+{
+    "env": {
+        "ndk_home" : "",
+        "myDefaultIncludePath": [
+            "${workspaceFolder}/**",
+            "${workspaceFolder}/Include",
+            "${workspaceFolder}/include"
+        ],
+        "win_path" : [
+        ],
+        "linux_path" : [
+        ],
+        "android_path" : [
+            "${ndk_home}/sysroot/usr/include"            
+        ]
+    },
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${myDefaultIncludePath}",
+                "${win_path}"
+            ],
+            "defines": [
+                "WIN32"
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "msvc-x64"
+        },
+
+        {
+            "name": "Linux",
+            "includePath": [
+                "${myDefaultIncludePath}",
+                "${linux_path}"
+            ],
+            "defines": [
+                "UNIX",
+                "NITROS_OPENGL"
+            ],
+			"compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "clang-x64"
+        },
+
+        {
+            "name": "Android",
+            "includePath": [
+                "${android_path}"
+            ],
+            "defines": [
+                "__ANDROID__"
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "clang-x64"
+        }
+
+    ]
+}
