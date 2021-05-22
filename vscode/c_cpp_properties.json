@@ -36,8 +36,7 @@
                 "${linux_path}"
             ],
             "defines": [
-                "UNIX",
-                "NITROS_OPENGL"
+                "UNIX"
             ],
 			"compilerPath": "/usr/bin/gcc",
             "cStandard": "c11",
